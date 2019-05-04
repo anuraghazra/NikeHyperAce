@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+h1,
+h2,
+h3 {
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  /* line-height: 20px; */
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Josefin Sans";
+}
+
+
+.show-popup {
+  opacity: 1;
+  transform: perspective(1px) translate(-50%, -50%) scale(1.0) !important;
+  transition: 0.2s;
+}
+
+.hide-popup {
+  opacity: 0;
+  transform: perspective(1px) translate(-50%, -50%) scale(0.7) !important;
+  transition: 0.2s;
+  pointer-events: none;
+}
