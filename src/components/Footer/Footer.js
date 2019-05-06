@@ -9,8 +9,13 @@ function FooterLinkBlock({ data }) {
       <p className="footer__headertext">{data.title}</p>
       <p className="footer__text">
         {
-          data.links.map(d => {
-            return <><a href="#">{d}</a> <br /></>
+          data.links.map((d, index) => {
+            return (
+              <React.Fragment key={Math.random()}>
+                <a  href="#">{d}</a>
+                <br/>
+              </React.Fragment>
+            )
           })
         }
       </p>

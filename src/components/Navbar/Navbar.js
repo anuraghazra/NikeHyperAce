@@ -67,7 +67,7 @@ class Navbar extends Component {
             <Item to={"preorder"} smooth spy offset={-150}>preorder</Item>
           </li>
           <li>
-            <Item name="isLoginOpen" onClick={this.handleOpenPopup}>login</Item>
+            <Item to={""} name="isLoginOpen" onClick={this.handleOpenPopup}>login</Item>
           </li>
           <li><Button name="isSignupOpen" onClick={this.handleOpenPopup}>SignUp</Button></li>
         </NavItems>

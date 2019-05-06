@@ -65,3 +65,10 @@ p {
   max-height: 100% !important;
   transition: 0.4s;
 }
+
+
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+  transition: 0.3s;
+}
