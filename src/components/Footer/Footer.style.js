@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ContentWrapper from '../UI/ContentWrapper';
+import media from '../UI/media';
 
 
 const FooterWrapper = styled(ContentWrapper)`
@@ -57,7 +58,7 @@ const FooterWrapper = styled(ContentWrapper)`
     display: flex;
 
     > div {
-      margin-right: 160px;
+      margin-right: 15%;
     }
   }
   .footer__headertext {
@@ -99,6 +100,12 @@ const FooterWrapper = styled(ContentWrapper)`
     position: absolute;
     width: 8%;
     right: -80px;
+  }
+
+  @media ${media.tablet} {
+    .footer__icons {
+      display: none;
+    }
   }
 `
 

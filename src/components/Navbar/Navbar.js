@@ -9,7 +9,8 @@ import Input from '../UI/Input';
 class Navbar extends Component {
   state = {
     isLoginOpen: false,
-    isSignupOpen: false
+    isSignupOpen: false,
+    isMenuOpen: false
   }
 
   handleOpenPopup = (e) => {
@@ -23,9 +24,17 @@ class Navbar extends Component {
     })
   }
 
+  handleOpenMenu = () => {
+    this.setState((prev) => {
+      return {
+        isMenuOpen: !prev.isMenuOpen
+      }
+    })
+  }
+
   render() {
     return (
-      <NavWrapper>
+      <NavWrapper className={this.state.isMenuOpen ? 'menu-open' : ''}>
         <Popup close={this.handleClosePopup} isOpen={this.state.isLoginOpen}>
           <h3>Login</h3>
           <Input placeholder="username" icon="fas fa-user" />
@@ -42,13 +51,24 @@ class Navbar extends Component {
         </Popup>
 
         <Logo height="auto" className="nav__logo" />
+        <i onClick={this.handleOpenMenu} className="fas fa-bars burger"></i>
 
         <NavItems>
-          <Item to={"home"} smooth spy offset={0}>home</Item>
-          <Item to={"feature"} smooth spy offset={-150}>features</Item>
-          <Item to={"ambassadors"} smooth spy offset={-150}>ambassadors</Item>
-          <Item to={"preorder"} smooth spy offset={-150}>preorder</Item>
-          <Item name="isLoginOpen" onClick={this.handleOpenPopup}>login</Item>
+          <li>
+            <Item to={"home"}  smooth spy offset={0}>home</Item>
+          </li>
+          <li>
+            <Item to={"feature"} smooth spy offset={-150}>features</Item>
+          </li>
+          <li>
+            <Item to={"ambassadors"} smooth spy offset={-150}>ambassadors</Item>
+          </li>
+          <li>
+            <Item to={"preorder"} smooth spy offset={-150}>preorder</Item>
+          </li>
+          <li>
+            <Item name="isLoginOpen" onClick={this.handleOpenPopup}>login</Item>
+          </li>
           <li><Button name="isSignupOpen" onClick={this.handleOpenPopup}>SignUp</Button></li>
         </NavItems>
       </NavWrapper>

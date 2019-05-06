@@ -1,7 +1,7 @@
 import React from 'react'
 import FeatureWrapper from './Feature.style';
 import HeaderText from '../UI/HeaderText';
-import {Hexagon, HexagonFlex} from '../UI/Hexagon';
+import { Hexagon, HexagonFlex } from '../UI/Hexagon';
 
 import svgFlexible from '../../assets/svg/hexa-flexible.svg'
 import svgVariety from '../../assets/svg/hexa-variety.svg'
@@ -12,7 +12,7 @@ function Feature() {
   return (
     <FeatureWrapper id={"feature"}>
       <img className="hexas" src={Hexas} />
-      
+
       <HeaderText>Superiorly Luxurious</HeaderText>
 
       <HexagonFlex>

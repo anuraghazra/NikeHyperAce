@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -25,11 +28,19 @@ h3 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5vw;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3vw;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
 }
 
 p {
@@ -48,4 +59,9 @@ p {
   transform: perspective(1px) translate(-50%, -50%) scale(0.7) !important;
   transition: 0.2s;
   pointer-events: none;
+}
+
+.menu-open {
+  max-height: 100% !important;
+  transition: 0.4s;
 }

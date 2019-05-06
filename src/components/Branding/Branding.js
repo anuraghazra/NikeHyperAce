@@ -1,6 +1,5 @@
 import React from 'react';
 import BrandingWrapper from './Branding.style';
-import HeaderText from '../UI/HeaderText';
 import Button from '../UI/Button';
 
 import NikeLogoText from '../../assets/svg/NikeLogoText.svg';

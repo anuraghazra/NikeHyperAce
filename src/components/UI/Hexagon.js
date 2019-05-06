@@ -5,6 +5,7 @@ const HexagonWrapper = styled.div`
  width: fit-content;
  text-align: center;
  font-size: 24px;
+ margin-top: 50px;
  
  .hexa, .hexa div {
   margin: 0 auto;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ContentWrapper from '../UI/ContentWrapper';
+import media from '../UI/media';
 
 const BrandingWrapper = styled(ContentWrapper)`
   position: relative;
@@ -45,6 +46,34 @@ const BrandingWrapper = styled(ContentWrapper)`
     width: 10%;
     top: 0;
     right: -80px;
+  }
+
+  @media ${media.tablet} {
+    .branding__content {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+      margin: 0;
+      padding: 0;
+
+
+      > img {
+        width: 40%;
+        margin: 30px auto;
+      }
+    }
+    
+    .branding__inner {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+  
+      > div {
+        margin: 0;
+        margin-top: 30px;
+      }
+    }
   }
 
 `
