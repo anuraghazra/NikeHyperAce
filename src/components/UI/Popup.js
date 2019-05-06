@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import media from '../UI/media';
 
 const PopupWrapper = styled.div`
   display: block;
@@ -39,6 +40,16 @@ const PopupWrapper = styled.div`
     }
   }
 
+
+  @media ${media.tablet} {
+    & {
+      width: 80vw;
+    }
+    
+    .popup__content {
+      width: 90%;
+    }
+  }
   
 `;
 
