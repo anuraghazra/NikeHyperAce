@@ -72,3 +72,11 @@ p {
   pointer-events: none;
   transition: 0.3s;
 }
+
+
+.author-info {
+  position: absolute;
+  bottom: -25px;
+  color: #838383;
+  font-size: 14px;
+}

@@ -64,6 +64,8 @@ function Ambassadors() {
           <i className="fab fa-cc-mastercard"></i>
           <i className="fab fa-paypal"></i>
         </div>
+
+        <span class="author-info">Created By <a href="https://anuraghazra.github.io">@anuraghazra</a></span>
       </section>
 
     </FooterWrapper>

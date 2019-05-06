@@ -10,6 +10,7 @@ import Feature from './components/Feature/Feature';
 import Branding from './components/Branding/Branding';
 import Ambassadors from './components/Ambassadors/Ambassadors';
 import Footer from './components/Footer/Footer';
+
 const theme = {
   primaryColor: '#FF9F47',
   secondaryColor: '#FF6320',
@@ -20,7 +21,6 @@ const theme = {
 };
 
 class App extends Component {
-
   state = {
     loaded: false
   }
